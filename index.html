@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Zodiac Sign </title>
+</head>
+<script>
+function signs(){
+var day=form.day.value;
+var month=form.mon.value;
+if(month=="december"){
+if(day<22){
+   document.getElementById("zodiac").innerHTML="  Capricorn";}
+else{
+  document.getElementById("zodiac").innerHTML="Aquarius";
+}}
+if(month=="january"){if(day<20){
+    document.getElementById("zodiac").innerHTML=" Aquarius";}
+else{
+document.getElementById("zodiac").innerHTML="Pisces";}
+}
+if(month=="february"){
+if(day<20){
+document.getElementById("zodiac").innerHTML="Pisces";}
+else{
+document.getElementById("zodiac").innerHTML="Aries";}
+}
+if(month=="march"){
+if(day<21){
+document.getElementById("zodiac").innerHTML="Aries";}
+else{
+document.getElementById("zodiac").innerHTML="Taurus";}
+}
+if(month=="april"){
+if(day<21){
+document.getElementById("zodiac").innerHTML="Taurus";}
+else{
+document.getElementById("zodiac").innerHTML="Gemini";}
+}
+if(month=="may"){
+if(day<21){
+document.getElementById("zodiac").innerHTML="Gemini";}
+else{
+document.getElementById("zodiac").innerHTML="Cancer";}}
+if(month=="june"){
+if(day<21){
+document.getElementById("zodiac").innerHTML="Cancer";
+}
+else{
+document.getElementById("zodiac").innerHTML="Leo";
+}
+}
+if(month=="july"){
+if(day<23){
+document.getElementById("zodiac").innerHTML="Leo";
+}
+else{
+document.getElementById("zodiac").innerHTML="Virgo";
+}
+}
+if(month=="august"){
+if(day<23){
+document.getElementById("zodiac").innerHTML="Virgo";
+}
+else{
+document.getElementById("zodiac").innerHTML="Libra";
+}
+}
+if(month=="september"){
+if(day<23){document.getElementById("zodiac").innerHTML="Libra"
+}
+else{
+document.getElementById("zodiac").innerHTML="Scorpio";
+}
+}
+if(month=="october"){
+if(day<23){
+document.getElementById("zodiac").innerHTML="Scorpio";
+}
+else{
+document.getElementById("zodiac").innerHTML="Sagittarius";
+}
+}
+if(month=="november"){
+if(day<23){
+document.getElementById("zodiac").innerHTML="Sagittarius";
+}
+else{
+document.getElementById("zodiac").innerHTML="Capricorn";
+}
+}
+}
+</script>
+<style>
+body,html{
+background-image:-webkit-linear-gradient(#f9d199,#fdd8b5,#f6e3d4,white,#bbdbf7,#92c4ee,#64abe3);
+background-size:cover;
+border-top:20%;
+min-width: 1024px;
+min-height: 650px;
+align-items: center;
+}
+</style>
+<body>
+<form name="form">
+<h1>What's you Zodiac Sign?</h1>
+<input type="text" name="month" id="mon" placeholder="month"/>
+<input type="number" name="day" id="day" placeholder="date"/>
+<input type="button" value="Proceed" onclick="signs()"/>
+<p id="zodiac">
+</p>
+</form>
+</body>
+</head>
+</script>
+</html>
